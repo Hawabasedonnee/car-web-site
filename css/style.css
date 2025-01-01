@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #3498db;
+}
+.logo{
+    color: #fff;
+}
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004274;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color:#fff ;
+    text-decoration: none;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+#Dakmode-Icon{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+            transition: all 0.5s;
+    }
+}
